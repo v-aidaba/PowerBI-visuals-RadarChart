@@ -34,17 +34,6 @@
   "Visual_Description_DataColors": "Možnosti zobrazenia farieb údajov",
   "Visual_Description_DataLabels": "Možnosti zobrazenia označenia údajov",
   "Visual_Description_Color": "Vyberte farbu pre označenia údajov",
-  "Visual_OnObject_DeleteTitle": "Odstrániť názov",
-  "Visual_OnObject_FormatTitle": "Formátovať názov",
-  "Visual_OnObject_DeleteLegend": "Odstrániť legendu",
-  "Visual_OnObject_FormatLegend": "Formátovať legendu",
-  "Visual_OnObject_AddTitle": "Pridať názov legendy",
-  "Visual_OnObject_DeleteLabels": "Odstrániť označenia údajov",
-  "Visual_OnObject_AddLabels": "Pridať označenia údajov",
-  "Visual_OnObject_FormatLabels": "Formátovať označenia údajov",
-  "Visual_OnObject_DrawPolygons": "Nakresliť mnohouholníky",
-  "Visual_OnObject_FormatColors": "Formátovať farby údajov",
-  "Visual_OnObject_Polygon": "mnohouholník",
   "Visual_Short_Description": "Viaceré miery vykreslené nad osou kategórií. Užitočné na porovnanie atribútov.",
   "Visual_Long_Description": "Radarový graf je grafická metóda zobrazovania multivariačných údajov vo forme dvojrozmerného grafu troch alebo viacerých kvantitatívnych premenných reprezentovaných na osiach začínajúcich od toho istého bodu. Relatívna poloha a uhol osí je typicky neinformačný.\nKaždá premenná má os, ktorá sa začína od stredu. Všetky osi sú usporiadané radiálne s rovnakou vzdialenosťou medzi sebou a so zachovanou rovnakou mierkou medzi všetkými osami. Mriežky, ktoré sa pripájajú od osi k osi, sa často používajú ako vodiace mriežky. Každá premenná hodnota je vykreslená pozdĺž svojej jednotlivej osi a všetky premenné v množine údajov sú navzájom prepojené na vytvorenie mnohouholníka.\nRadarové grafy sú užitočné na zobrazenie toho, ktoré premenné majú v rámci množiny údajov vysoké alebo nízke skóre, čo je ideálne na zobrazenie výkonnosti, napríklad na analýzu zručností zamestnancov alebo športových hráčov, porovnanie produktov atď.\n Tento vizuál je typu open-source. Kód získate na stránke GitHub: https://github.com/Microsoft/PowerBI-visuals-RadarChart"
 }

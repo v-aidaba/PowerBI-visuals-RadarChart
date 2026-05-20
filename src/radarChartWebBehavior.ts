@@ -48,7 +48,6 @@ export interface RadarChartBehaviorOptions extends IBehaviorOptions {
     clearCatcher: Selection<any>;
     legend: Selection<any>;
     hasHighlights: boolean;
-    formatMode: boolean;
 }
 
 export class RadarChartWebBehavior implements IInteractiveBehavior {
@@ -63,14 +62,7 @@ export class RadarChartWebBehavior implements IInteractiveBehavior {
         this.clearCatcher = options.clearCatcher;
         this.legendItems = options.legend;
 
-        if (options.formatMode){
-            // remove event listeners which are irrelevant for format mode.
-            this.removeEventListeners();
-            selectionHandler.handleClearSelection();
-        }
-        else { 
-            this.addEventListeners(selectionHandler);
-        }
+        this.addEventListeners(selectionHandler);
     }
 
     public renderSelection(hasSelection: boolean): void {
@@ -128,12 +120,4 @@ export class RadarChartWebBehavior implements IInteractiveBehavior {
         });
     }
 
-    public removeEventListeners(): void {
-        this.selection.on("click", null);
-        this.selection.on("contextmenu", null);
-        this.selection.on("keydown", null);
-        this.clearCatcher.on("click", null);
-        this.clearCatcher.on("contextmenu", null);
-        this.legendItems.on("click", null);
-    }
 }

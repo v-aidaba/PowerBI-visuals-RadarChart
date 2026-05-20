@@ -202,7 +202,5 @@
     "sorting": {
         "default": {}
     },
-    "privileges": [],
-    "supportsOnObjectFormatting": true,
-    "enablePointerEventsFormatMode": true
+    "privileges": []
 }
