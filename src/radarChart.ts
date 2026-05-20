@@ -503,7 +503,6 @@ export class RadarChart implements IVisual {
             this.clear();
             return;
         }
-        this.events.renderingStarted(options);
         const dataView: DataView = options.dataViews[0];
 
         this.formattingSettings = RadarChart.parseSettings(dataView, this.colorHelper, this.formattingSettingsService);
@@ -531,7 +530,6 @@ export class RadarChart implements IVisual {
             categories = dataView.categorical.categories[0].values;
         } else {
             this.clear();
-            this.events.renderingFinished(options);
             return;
         }
         this.viewport = {
@@ -568,7 +566,6 @@ export class RadarChart implements IVisual {
 
         if ((width < RadarChart.MinViewportToRender.width) || (height < RadarChart.MinViewportToRender.height)) {
             this.clear();
-            this.events.renderingFinished(options);
             return;
         }
 
